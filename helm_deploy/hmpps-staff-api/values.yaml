@@ -2,7 +2,7 @@
 generic-service:
   nameOverride: hmpps-staff-api
 
-  replicaCount: 4
+  replicaCount: 2
 
   image:
     repository: quay.io/hmpps/hmpps-staff-api
@@ -44,3 +44,4 @@ generic-service:
 
 generic-prometheus-alerts:
   targetApplication: hmpps-staff-api
+  alertSeverity: hmpps-tier
